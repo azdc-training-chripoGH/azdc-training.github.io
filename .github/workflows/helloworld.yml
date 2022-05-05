@@ -5,6 +5,11 @@ on:
   push:
   workflow_dispatch:
 
+permissions:
+  issues: write
+  pull-requests: write
+  contents: write
+  
 jobs:
   greet:
     runs-on: ubuntu-latest
